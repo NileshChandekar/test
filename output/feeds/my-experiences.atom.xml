@@ -1,5 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title></title><link href="Ganesh%20Kadam/" rel="alternate"></link><link href="Ganesh%20Kadam/feeds/my-experiences.atom.xml" rel="self"></link><id>Ganesh Kadam/</id><updated>2016-02-10T02:32:00+05:30</updated><entry><title>February 2016</title><link href="Ganesh%20Kadam/february-2016.html" rel="alternate"></link><updated>2016-02-10T02:32:00+05:30</updated><author><name>Ganesh Kadam</name></author><id>tag:,2016-02-10:Ganesh Kadam/february-2016.html</id><summary type="html">&lt;div class="section" id="week-5-jashn"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title></title><link href="Ganesh%20Kadam/" rel="alternate"></link><link href="Ganesh%20Kadam/feeds/my-experiences.atom.xml" rel="self"></link><id>Ganesh Kadam/</id><updated>2016-03-13T07:50:00+05:30</updated><entry><title>March 2016</title><link href="Ganesh%20Kadam/march-2016.html" rel="alternate"></link><updated>2016-03-13T07:50:00+05:30</updated><author><name>Ganesh Kadam</name></author><id>tag:,2016-03-13:Ganesh Kadam/march-2016.html</id><summary type="html">&lt;div class="section" id="week-9"&gt;
+&lt;h2&gt;Week # 9&lt;/h2&gt;
+&lt;p&gt;Finally, few issues in my bash script are resolved. Now I need to test it on the other environments and work further on the validation part, and optimization.The script has helped me a lot in understanding OpenStack-APIs, CURL concepts, and other bash scripting skills.
+Also, I am attending the weekly #rdo meetings on IRC giving me a good insight of what all things are coming up in the next release of RDO.&lt;/p&gt;
+&lt;p&gt;Here are the links I used  while writing bash script:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://developer.openstack.org/api-ref-networking-v2-ext.html#addRouterInterface"&gt;OpenStack netwowking API Reference&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://wiki.openstack.org/wiki/Neutron/APIv2-specification"&gt;Neutron API&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://ask.openstack.org/"&gt;Ask OpenStack&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://curl.haxx.se/docs/httpscripting.html"&gt;CURL&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.tldp.org/LDP/abs/html/"&gt;Bash&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We were given an opportunity to volunteer the Python Pune meetup. It was a nice experience in February devsprint2016 #1, and a great Learning.&lt;/p&gt;
+&lt;p&gt;I also volunteered for the gnuNIFY 2016 last month. Attended few workshops as well. &amp;#64;ramky took an awsome Python workshop, he started
+with absolute basics, and at the end, he also discussed on Big Data, Machine Learning and few advanced topics.&lt;/p&gt;
+&lt;p&gt;We have started to prepare for the Red Hat certifications as well.Initially, we  have started with RHCSA, then we will focus on RHCE and then on Red Hat OpenStack Certification track.&lt;/p&gt;
+&lt;/div&gt;
+</summary></entry><entry><title>February 2016</title><link href="Ganesh%20Kadam/february-2016.html" rel="alternate"></link><updated>2016-02-10T02:32:00+05:30</updated><author><name>Ganesh Kadam</name></author><id>tag:,2016-02-10:Ganesh Kadam/february-2016.html</id><summary type="html">&lt;div class="section" id="week-5-jashn"&gt;
 &lt;h2&gt;# Week 5 : [Jashn]&lt;/h2&gt;
 &lt;p&gt;I am working on a script to automate few tasks related to my work and was facing some issues. I discussed my issues with &amp;#64;rshbhdas initially.&amp;#64;rshbhdas helped me to understand how the  script should work. Later I also discussed few thing about sed and awk with &amp;#64;savitojs for my shell script. He is a System Admin for our project. We also had a bit of discussion about a Chef, Puppet, and Ansible. I got to know how he handles all the machines with just the scripts written in shell and python. &amp;#64;ramkrsna is one of a senior member of our team. He is Principal Software Engineer at Red Hat and looks after crucial part of our project. I had a short discussion with him on my script. He was quitebusy but still, later on, he had a look at my script and asked me to write the script in a different way. &amp;#64;ramkrsna suggested me to use Curl with Bash and API's available for that task. He also gave me some books to read for the same.&lt;/p&gt;
 &lt;p&gt;We also attended the first #fedora-pune meetup.Following was the agenda for first meetup:&lt;/p&gt;

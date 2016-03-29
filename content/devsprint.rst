@@ -29,5 +29,4 @@ Although this was experimental dev sprint, not all of the attendees could find t
 
 It was a nice experience for me and got many new things added to my knowledge base. I have started preparing for more such dev sprints to happen in coming days.    
 
-*Learning is the eye of the mind. Keep Learning*
-                                -French Proverb
+*Learning is the eye of the mind. Keep Learning* -French Proverb
