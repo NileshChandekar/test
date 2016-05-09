@@ -3,6 +3,7 @@ pythondevsprint 2016
 ====================
 :date: 2016-02-24
 :time: 07:41:41 
+:tags: Python
 :category: MeetUps and Events
 
 
@@ -13,9 +14,9 @@ This dev sprint was quite different than the previous ones. We have asked attend
 
 At the very beginning of this dev sprint, @ciypro explained about getting started with the **#OpenSource** contributions and how one should find the projects of his/her own choice. We found most of them had the same problem in getting the projects of their interests as there are a number of projects available and for newbies, it is really very difficult to get the starting point for the **#OpenSource** contribution.  
 Here are few links where I searched for the projects and helped few attendees to start with: 
-- link `Fedora <http://whatcanidoforfedora.org/>`_ 
-- link `OpenStack <https://bugs.launchpad.net/openstack/+bugs>`_
-- link `Mozilla <http://whatcanidoformozilla.org/>`_
+- `Fedora <http://whatcanidoforfedora.org/>`_
+- `OpenStack <https://bugs.launchpad.net/openstack/+bugs>`_
+- `Mozilla <http://whatcanidoformozilla.org/>`_
 
 I have selected the bug from link `Congress <https://bugs.launchpad.net/congress/+bug/1415199>`_ from *OpenStack low hanging fruits* . 
 Here is the link for the link `Congress <https://github.com/openstack/congress>`__ on git. Currently, the installation is available only for 

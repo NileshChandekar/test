@@ -9,24 +9,24 @@ Following was the agenda for this meetup :&lt;/p&gt;
 &lt;p&gt;&amp;#64;cyipro started the meetup initially with an introduction to Python and OpenSource. The majority of attendees were students so it was very helpful for them.&lt;/p&gt;
 &lt;p&gt;Amol Kahat started with the first talk of this meet up on libvirt-api he is a Red Hat intern. libvert is a toolkit to interact with the virtualization capabilities of recent versions of Linux. It is a free and opensource software available under GPL license. Amol explained about the virtualization technology, hypervisors and how the libvert-api is different from the other available options.
 To know more information on libvirt-apis, here is the link :&lt;/p&gt;
-&lt;p&gt;link &lt;a class="reference external" href="https://libvirt.org/"&gt;Libvert&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://libvirt.org/"&gt;Libvert&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&amp;#64;vega_yaa is the organizer of Pune Vim Users Group. The main motto of this group is to help people start using vim and to share knowledge about the same. &amp;#64;vega_yaa started with vim workshop after Amol's talk by explaining a little history of vi and vim, later on also explained few differences in bertween them.It was for all the novices as well as for the people who already use vim for their daily use but are unaware of the vim's power. Starting with very basics, he explained why we should use vim, and its magic once you get used to it.
 Attendees got a hands-on session on vim, for example starting with how you should open multiple files using vim, how to use alias, Buffermode in vim, various options like split, vsplit, tabnewfile, code folding in vim etc.Though it sounds very simple, knowing essentials of vim will definitely boost the productivity.
 Here are the slides for this workshop :&lt;/p&gt;
-&lt;p&gt;link &lt;a class="reference external" href="https://github.com/PuneVimUser/magical-vim"&gt;Vim&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://github.com/PuneVimUser/magical-vim"&gt;Vim&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&amp;#64;DhritiShikhar gave  a talk on Fedora Hubs post vim workshop. She is a final year Engineering student from a Sinhagad college of Engineering, Pune and very active in OpenSource contributions. She is one of the owners of Fedora Hubs project as well. She explained why this project was started and also showed how one should start with the contribution to any open source project.
 Fedora Hubs is still in active development stage and due for release in next 3 months. Here is the link for the Fedora Hubs project on
 Pagure :&lt;/p&gt;
-&lt;p&gt;link &lt;a class="reference external" href="https://pagure.io/fedora-hubs"&gt;Fedora Hubs&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://pagure.io/fedora-hubs"&gt;Fedora Hubs&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Finally the meetup ended with a good response and feedbacks from attendees. We had some discussion for next meetup. It was as a good learning experience.&lt;/p&gt;
-</summary></entry><entry><title>pythondevsprint 2016</title><link href="Ganesh%20Kadam/pythondevsprint-2016.html" rel="alternate"></link><updated>2016-02-24T00:00:00+05:30</updated><author><name>Ganesh Kadam</name></author><id>tag:,2016-02-24:Ganesh Kadam/pythondevsprint-2016.html</id><summary type="html">&lt;p&gt;&lt;em&gt;Knowledge is Power.&lt;/em&gt;&lt;/p&gt;
+</summary><category term="Python"></category></entry><entry><title>pythondevsprint 2016</title><link href="Ganesh%20Kadam/pythondevsprint-2016.html" rel="alternate"></link><updated>2016-02-24T00:00:00+05:30</updated><author><name>Ganesh Kadam</name></author><id>tag:,2016-02-24:Ganesh Kadam/pythondevsprint-2016.html</id><summary type="html">&lt;p&gt;&lt;em&gt;Knowledge is Power.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;#python-pune&lt;/strong&gt; meetup organized &lt;em&gt;devsprint#1&lt;/em&gt; this Saturday i.e on 20-02-2016. It was the first dev sprint for me as well and my first meet up as a host for the day, thanks to &amp;#64;cyipro and &amp;#64;yudocca for giving me this opportunity.
 This dev sprint was quite different than the previous ones. We have asked attendees to select the &lt;strong&gt;#OpenSource&lt;/strong&gt; projects of their own choice to work on during the dev sprint. There were many of them who could find themselves  suitable projects and started working on, but few were completely new to &lt;strong&gt;#OpenSource&lt;/strong&gt; contribution and so it took some time for them to start.&lt;/p&gt;
 &lt;p&gt;At the very beginning of this dev sprint, &amp;#64;ciypro explained about getting started with the &lt;strong&gt;#OpenSource&lt;/strong&gt; contributions and how one should find the projects of his/her own choice. We found most of them had the same problem in getting the projects of their interests as there are a number of projects available and for newbies, it is really very difficult to get the starting point for the &lt;strong&gt;#OpenSource&lt;/strong&gt; contribution.
 Here are few links where I searched for the projects and helped few attendees to start with:
-- link &lt;a class="reference external" href="http://whatcanidoforfedora.org/"&gt;Fedora&lt;/a&gt;
-- link &lt;a class="reference external" href="https://bugs.launchpad.net/openstack/+bugs"&gt;OpenStack&lt;/a&gt;
-- link &lt;a class="reference external" href="http://whatcanidoformozilla.org/"&gt;Mozilla&lt;/a&gt;&lt;/p&gt;
+- &lt;a class="reference external" href="http://whatcanidoforfedora.org/"&gt;Fedora&lt;/a&gt;
+- &lt;a class="reference external" href="https://bugs.launchpad.net/openstack/+bugs"&gt;OpenStack&lt;/a&gt;
+- &lt;a class="reference external" href="http://whatcanidoformozilla.org/"&gt;Mozilla&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;I have selected the bug from link &lt;a class="reference external" href="https://bugs.launchpad.net/congress/+bug/1415199"&gt;Congress&lt;/a&gt; from &lt;em&gt;OpenStack low hanging fruits&lt;/em&gt; .
 Here is the link for the link &lt;a class="reference external" href="https://github.com/openstack/congress"&gt;Congress&lt;/a&gt; on git. Currently, the installation is available only for
 Debian. &amp;#64;cyipro have suggested me to update the process for&lt;/p&gt;
@@ -35,4 +35,4 @@ Debian. &amp;#64;cyipro have suggested me to update the process for&lt;/p&gt;
 &lt;p&gt;Although this was experimental dev sprint, not all of the attendees could find the projects and send the patches, but everyone was satisfied at the end of the day, because for many this meet up formed as a platform to learn and start with #OpenSource contributions. We had a feedback session at the end  from each of the attendees and we got many positive feedbacks for this dev sprint.&lt;/p&gt;
 &lt;p&gt;It was a nice experience for me and got many new things added to my knowledge base. I have started preparing for more such dev sprints to happen in coming days.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Learning is the eye of the mind. Keep Learning&lt;/em&gt; -French Proverb&lt;/p&gt;
-</summary></entry></feed>
+</summary><category term="Python"></category></entry></feed>

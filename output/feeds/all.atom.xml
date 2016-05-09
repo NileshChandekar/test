@@ -1,5 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title></title><link href="Ganesh%20Kadam/" rel="alternate"></link><link href="Ganesh%20Kadam/feeds/all.atom.xml" rel="self"></link><id>Ganesh Kadam/</id><updated>2016-03-28T00:00:00+05:30</updated><entry><title>Python Pune Meetup March 2016</title><link href="Ganesh%20Kadam/python-pune-meetup-march-2016.html" rel="alternate"></link><updated>2016-03-28T00:00:00+05:30</updated><author><name>Ganesh Kadam</name></author><id>tag:,2016-03-28:Ganesh Kadam/python-pune-meetup-march-2016.html</id><summary type="html">&lt;p&gt;Python Pune Meetup  March 2016 was organized at Amazatic Solutions on 26th March 2016.
+<feed xmlns="http://www.w3.org/2005/Atom"><title></title><link href="Ganesh%20Kadam/" rel="alternate"></link><link href="Ganesh%20Kadam/feeds/all.atom.xml" rel="self"></link><id>Ganesh Kadam/</id><updated>2016-04-26T00:00:00+05:30</updated><entry><title>Gerrit Issue</title><link href="Ganesh%20Kadam/gerrit-issue.html" rel="alternate"></link><updated>2016-04-26T00:00:00+05:30</updated><author><name>Ganesh Kadam</name></author><id>tag:,2016-04-26:Ganesh Kadam/gerrit-issue.html</id><summary type="html">&lt;p&gt;I was working on shell a script. Now that it was complete I need to send that script for review.So I started to work on this.
+Unfortunately I got the following error which took me almost took a day to resolve on my side. I decided not to ask my mentors until and unless  I am not able to rsolve this issue. This has been common issue amongst all of us interns!&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+[gkadam&amp;#64;dhcp201-114 cert-openstack-scripts]$ git review -R
+Could not connect to gerrit.
+Enter your gerrit username: gkadam&amp;#64;redhat.com
+Trying again with ssh://gkadam&amp;#64;redhat.com&amp;#64;code.engineering.redhat.com:22/cert-openstack-scripts
+&amp;lt;traceback object at 0x7fa7a448cb00&amp;gt;
+We don't know where your gerrit is. Please manually create a remote
+named &amp;quot;gerrit&amp;quot; and try again.
+Could not connect to gerrit at ssh://gkadam&amp;#64;redhat.com&amp;#64;code.engineering.redhat.com:22/cert-openstack-acripts
+Traceback (most recent call last):
+File &amp;quot;/usr/bin/git-review&amp;quot;, line 11, in &amp;lt;module&amp;gt;
+sys.exit(main())
+File &amp;quot;/usr/lib/python2.7/site-packages/git_review/cmd.py&amp;quot;, line 1534, in main
+sys.exit(e.EXIT_CODE)
+AttributeError: 'GitReviewException' object has no attribute 'EXIT_CODE'
+&lt;/pre&gt;
+&lt;p&gt;After going through lots of google serarches I realized that, the things that were going wrong are already mentioned in the error code that I was getting. Before this I made a very silly mistake of deleting the existing file in that directory from which I have to send the file for review. So just after knowing this issue, I copied the new script in to the same directory again. Then I renamed to it's earlier name and performed following steps :&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;Cloned the repository to new location :&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class="literal-block"&gt;
+[gkadam&amp;#64;dhcp201-114 ~]$ git clone ssh://gkadam&amp;#64;code.engineering.redhat.com:22/cert-openstack-scripts
+Cloning into 'cert-openstack-scripts'...
+Checking connectivity... done.
+warning: remote HEAD refers to nonexistent ref, unable to checkout.
+&lt;/pre&gt;
+&lt;ol class="arabic simple" start="2"&gt;
+&lt;li&gt;Added the remote repository as we can see in the above error!&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class="literal-block"&gt;
+[gkadam&amp;#64;dhcp201-114 cert-openstack-scripts]$ git remote add gerrit ssh://gkadam&amp;#64;code.engineering.redhat.com:22/cert-openstack-scripts
+&lt;/pre&gt;
+&lt;ol class="arabic simple" start="3"&gt;
+&lt;li&gt;Then did a git review after adding the script and commiting it in that dierctory :&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class="literal-block"&gt;
+[gkadam&amp;#64;dhcp201-114 cert-openstack-scripts]$ git review -R
+Your change was committed before the commit hook was installed.
+Amending the commit to add a gerrit change id.
+remote: Processing changes: new: 1, refs: 1, done.
+remote: (W) 9dedc09: commit subject &amp;gt;65 characters; use shorter first paragraph
+remote: (W) 9dedc09: too many commit message lines longer than 70 characters; manually wrap lines
+remote:
+remote: New Changes:
+remote:https://code.engineering.redhat.com/gerrit/73014 Add user validation, and create functions : create_member,create_network and remote:
+To ssh://gkadam&amp;#64;code.engineering.redhat.com:22/cert-openstack-scripts
+* [new branch]      HEAD -&amp;gt; refs/publish/master
+&lt;/pre&gt;
+&lt;p&gt;This was the workaround for my problem that I was facing.&lt;/p&gt;
+&lt;p&gt;Here is the link to the similar issue on git : &lt;a class="reference external" href="https://help.github.com/articles/error-remote-head-refers-to-nonexistent-ref-unable-to-checkout/"&gt;Git remote HEAD Issue&lt;/a&gt;&lt;/p&gt;
+</summary><category term="Gerrit"></category><category term="Git"></category></entry><entry><title>Python Pune Meetup March 2016</title><link href="Ganesh%20Kadam/python-pune-meetup-march-2016.html" rel="alternate"></link><updated>2016-03-28T00:00:00+05:30</updated><author><name>Ganesh Kadam</name></author><id>tag:,2016-03-28:Ganesh Kadam/python-pune-meetup-march-2016.html</id><summary type="html">&lt;p&gt;Python Pune Meetup  March 2016 was organized at Amazatic Solutions on 26th March 2016.
 Following was the agenda for this meetup :&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;Workshop : Vim &amp;amp; frameworks by Devchandra L&lt;/li&gt;
@@ -9,17 +61,17 @@ Following was the agenda for this meetup :&lt;/p&gt;
 &lt;p&gt;&amp;#64;cyipro started the meetup initially with an introduction to Python and OpenSource. The majority of attendees were students so it was very helpful for them.&lt;/p&gt;
 &lt;p&gt;Amol Kahat started with the first talk of this meet up on libvirt-api he is a Red Hat intern. libvert is a toolkit to interact with the virtualization capabilities of recent versions of Linux. It is a free and opensource software available under GPL license. Amol explained about the virtualization technology, hypervisors and how the libvert-api is different from the other available options.
 To know more information on libvirt-apis, here is the link :&lt;/p&gt;
-&lt;p&gt;link &lt;a class="reference external" href="https://libvirt.org/"&gt;Libvert&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://libvirt.org/"&gt;Libvert&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&amp;#64;vega_yaa is the organizer of Pune Vim Users Group. The main motto of this group is to help people start using vim and to share knowledge about the same. &amp;#64;vega_yaa started with vim workshop after Amol's talk by explaining a little history of vi and vim, later on also explained few differences in bertween them.It was for all the novices as well as for the people who already use vim for their daily use but are unaware of the vim's power. Starting with very basics, he explained why we should use vim, and its magic once you get used to it.
 Attendees got a hands-on session on vim, for example starting with how you should open multiple files using vim, how to use alias, Buffermode in vim, various options like split, vsplit, tabnewfile, code folding in vim etc.Though it sounds very simple, knowing essentials of vim will definitely boost the productivity.
 Here are the slides for this workshop :&lt;/p&gt;
-&lt;p&gt;link &lt;a class="reference external" href="https://github.com/PuneVimUser/magical-vim"&gt;Vim&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://github.com/PuneVimUser/magical-vim"&gt;Vim&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&amp;#64;DhritiShikhar gave  a talk on Fedora Hubs post vim workshop. She is a final year Engineering student from a Sinhagad college of Engineering, Pune and very active in OpenSource contributions. She is one of the owners of Fedora Hubs project as well. She explained why this project was started and also showed how one should start with the contribution to any open source project.
 Fedora Hubs is still in active development stage and due for release in next 3 months. Here is the link for the Fedora Hubs project on
 Pagure :&lt;/p&gt;
-&lt;p&gt;link &lt;a class="reference external" href="https://pagure.io/fedora-hubs"&gt;Fedora Hubs&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://pagure.io/fedora-hubs"&gt;Fedora Hubs&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Finally the meetup ended with a good response and feedbacks from attendees. We had some discussion for next meetup. It was as a good learning experience.&lt;/p&gt;
-</summary></entry><entry><title>March 2016</title><link href="Ganesh%20Kadam/march-2016.html" rel="alternate"></link><updated>2016-03-13T07:50:00+05:30</updated><author><name>Ganesh Kadam</name></author><id>tag:,2016-03-13:Ganesh Kadam/march-2016.html</id><summary type="html">&lt;div class="section" id="week-9"&gt;
+</summary><category term="Python"></category></entry><entry><title>March 2016</title><link href="Ganesh%20Kadam/march-2016.html" rel="alternate"></link><updated>2016-03-13T07:50:00+05:30</updated><author><name>Ganesh Kadam</name></author><id>tag:,2016-03-13:Ganesh Kadam/march-2016.html</id><summary type="html">&lt;div class="section" id="week-9"&gt;
 &lt;h2&gt;Week # 9&lt;/h2&gt;
 &lt;p&gt;Finally, few issues in my bash script are resolved. Now I need to test it on the other environments and work further on the validation part, and optimization.The script has helped me a lot in understanding OpenStack-APIs, CURL concepts, and other bash scripting skills.
 Also, I am attending the weekly #rdo meetings on IRC giving me a good insight of what all things are coming up in the next release of RDO.&lt;/p&gt;
@@ -36,14 +88,14 @@ Also, I am attending the weekly #rdo meetings on IRC giving me a good insight of
 with absolute basics, and at the end, he also discussed on Big Data, Machine Learning and few advanced topics.&lt;/p&gt;
 &lt;p&gt;We have started to prepare for the Red Hat certifications as well.Initially, we  have started with RHCSA, then we will focus on RHCE and then on Red Hat OpenStack Certification track.&lt;/p&gt;
 &lt;/div&gt;
-</summary></entry><entry><title>pythondevsprint 2016</title><link href="Ganesh%20Kadam/pythondevsprint-2016.html" rel="alternate"></link><updated>2016-02-24T00:00:00+05:30</updated><author><name>Ganesh Kadam</name></author><id>tag:,2016-02-24:Ganesh Kadam/pythondevsprint-2016.html</id><summary type="html">&lt;p&gt;&lt;em&gt;Knowledge is Power.&lt;/em&gt;&lt;/p&gt;
+</summary><category term="Red Hat"></category></entry><entry><title>pythondevsprint 2016</title><link href="Ganesh%20Kadam/pythondevsprint-2016.html" rel="alternate"></link><updated>2016-02-24T00:00:00+05:30</updated><author><name>Ganesh Kadam</name></author><id>tag:,2016-02-24:Ganesh Kadam/pythondevsprint-2016.html</id><summary type="html">&lt;p&gt;&lt;em&gt;Knowledge is Power.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;#python-pune&lt;/strong&gt; meetup organized &lt;em&gt;devsprint#1&lt;/em&gt; this Saturday i.e on 20-02-2016. It was the first dev sprint for me as well and my first meet up as a host for the day, thanks to &amp;#64;cyipro and &amp;#64;yudocca for giving me this opportunity.
 This dev sprint was quite different than the previous ones. We have asked attendees to select the &lt;strong&gt;#OpenSource&lt;/strong&gt; projects of their own choice to work on during the dev sprint. There were many of them who could find themselves  suitable projects and started working on, but few were completely new to &lt;strong&gt;#OpenSource&lt;/strong&gt; contribution and so it took some time for them to start.&lt;/p&gt;
 &lt;p&gt;At the very beginning of this dev sprint, &amp;#64;ciypro explained about getting started with the &lt;strong&gt;#OpenSource&lt;/strong&gt; contributions and how one should find the projects of his/her own choice. We found most of them had the same problem in getting the projects of their interests as there are a number of projects available and for newbies, it is really very difficult to get the starting point for the &lt;strong&gt;#OpenSource&lt;/strong&gt; contribution.
 Here are few links where I searched for the projects and helped few attendees to start with:
-- link &lt;a class="reference external" href="http://whatcanidoforfedora.org/"&gt;Fedora&lt;/a&gt;
-- link &lt;a class="reference external" href="https://bugs.launchpad.net/openstack/+bugs"&gt;OpenStack&lt;/a&gt;
-- link &lt;a class="reference external" href="http://whatcanidoformozilla.org/"&gt;Mozilla&lt;/a&gt;&lt;/p&gt;
+- &lt;a class="reference external" href="http://whatcanidoforfedora.org/"&gt;Fedora&lt;/a&gt;
+- &lt;a class="reference external" href="https://bugs.launchpad.net/openstack/+bugs"&gt;OpenStack&lt;/a&gt;
+- &lt;a class="reference external" href="http://whatcanidoformozilla.org/"&gt;Mozilla&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;I have selected the bug from link &lt;a class="reference external" href="https://bugs.launchpad.net/congress/+bug/1415199"&gt;Congress&lt;/a&gt; from &lt;em&gt;OpenStack low hanging fruits&lt;/em&gt; .
 Here is the link for the link &lt;a class="reference external" href="https://github.com/openstack/congress"&gt;Congress&lt;/a&gt; on git. Currently, the installation is available only for
 Debian. &amp;#64;cyipro have suggested me to update the process for&lt;/p&gt;
@@ -52,7 +104,7 @@ Debian. &amp;#64;cyipro have suggested me to update the process for&lt;/p&gt;
 &lt;p&gt;Although this was experimental dev sprint, not all of the attendees could find the projects and send the patches, but everyone was satisfied at the end of the day, because for many this meet up formed as a platform to learn and start with #OpenSource contributions. We had a feedback session at the end  from each of the attendees and we got many positive feedbacks for this dev sprint.&lt;/p&gt;
 &lt;p&gt;It was a nice experience for me and got many new things added to my knowledge base. I have started preparing for more such dev sprints to happen in coming days.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Learning is the eye of the mind. Keep Learning&lt;/em&gt; -French Proverb&lt;/p&gt;
-</summary></entry><entry><title>February 2016</title><link href="Ganesh%20Kadam/february-2016.html" rel="alternate"></link><updated>2016-02-10T02:32:00+05:30</updated><author><name>Ganesh Kadam</name></author><id>tag:,2016-02-10:Ganesh Kadam/february-2016.html</id><summary type="html">&lt;div class="section" id="week-5-jashn"&gt;
+</summary><category term="Python"></category></entry><entry><title>February 2016</title><link href="Ganesh%20Kadam/february-2016.html" rel="alternate"></link><updated>2016-02-10T02:32:00+05:30</updated><author><name>Ganesh Kadam</name></author><id>tag:,2016-02-10:Ganesh Kadam/february-2016.html</id><summary type="html">&lt;div class="section" id="week-5-jashn"&gt;
 &lt;h2&gt;# Week 5 : [Jashn]&lt;/h2&gt;
 &lt;p&gt;I am working on a script to automate few tasks related to my work and was facing some issues. I discussed my issues with &amp;#64;rshbhdas initially.&amp;#64;rshbhdas helped me to understand how the  script should work. Later I also discussed few thing about sed and awk with &amp;#64;savitojs for my shell script. He is a System Admin for our project. We also had a bit of discussion about a Chef, Puppet, and Ansible. I got to know how he handles all the machines with just the scripts written in shell and python. &amp;#64;ramkrsna is one of a senior member of our team. He is Principal Software Engineer at Red Hat and looks after crucial part of our project. I had a short discussion with him on my script. He was quitebusy but still, later on, he had a look at my script and asked me to write the script in a different way. &amp;#64;ramkrsna suggested me to use Curl with Bash and API's available for that task. He also gave me some books to read for the same.&lt;/p&gt;
 &lt;p&gt;We also attended the first #fedora-pune meetup.Following was the agenda for first meetup:&lt;/p&gt;
@@ -85,7 +137,7 @@ Next month we will be having Python DevSprint for one day in which we will be di
 &lt;p&gt;I started working on some of the live issues,peer-reviewing with the help of &amp;#64;NeetiDahiya.We had one more intern added to our interns family and yet another box of &lt;cite&gt;Doughnuts!&lt;/cite&gt;. &amp;#64;ciypro had already asked us to share whatever sessions we had, with the new joinees.&amp;#64;shrienk has asked us to make us new joinees checklist so that it is self-explanatory enough to new joinees to do intial tasks related to our project and avoid confusions.&lt;/p&gt;
 &lt;p&gt;We are planning to have intern's morning and evening sessions in which everyone of us will take some topics and we will discuss on them as it will help us share our knowledge,help grow our understanding of concepts and learn new things from eachother.&lt;/p&gt;
 &lt;/div&gt;
-</summary></entry><entry><title>Red Hat - The Journey Begins !</title><link href="Ganesh%20Kadam/red-hat-the-journey-begins.html" rel="alternate"></link><updated>2016-01-13T06:53:00+05:30</updated><author><name>Ganesh Kadam</name></author><id>tag:,2016-01-13:Ganesh Kadam/red-hat-the-journey-begins.html</id><summary type="html">&lt;p&gt;Hello everyone !!&lt;/p&gt;
+</summary><category term="Red Hat"></category></entry><entry><title>Red Hat - The Journey Begins !</title><link href="Ganesh%20Kadam/red-hat-the-journey-begins.html" rel="alternate"></link><updated>2016-01-13T06:53:00+05:30</updated><author><name>Ganesh Kadam</name></author><id>tag:,2016-01-13:Ganesh Kadam/red-hat-the-journey-begins.html</id><summary type="html">&lt;p&gt;Hello everyone !!&lt;/p&gt;
 &lt;p&gt;Getting an internship at Red Hat was like my dream come true! My parents, at first, thought that I am joking and they never expected that I would get this internship, but later on when I showed them my confirmation mail they were happy. Things changed. Mom and Dad, who used to shout at me every time were now relaxed and then they started explaining about other responsibilities at my place with a hope that I would be capable of handling them some day! ;)&lt;/p&gt;
 &lt;p&gt;It was December 14th, the day when I entered Red Hat, and my journey with Red Hat begins! :)&lt;/p&gt;
 &lt;div class="section" id="week-1-kickstart-of-internship"&gt;
@@ -127,4 +179,4 @@ We will be attending Fedora meetup happening this week and also Python-Pune meet
 &lt;p&gt;This is my first blog and I have enjoyed every bit of writing it . Hope so I would improve on it in my upcoming posts.... :D&lt;/p&gt;
 &lt;p&gt;May the force be with all of us !!&lt;/p&gt;
 &lt;/div&gt;
-</summary></entry></feed>
+</summary><category term="Red Hat"></category></entry></feed>

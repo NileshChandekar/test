@@ -3,6 +3,7 @@ March 2016
 ==========
 :date: 2016-03-13 7:50 
 :category: My Experiences
+:tags: Red Hat
 :author: Ganesh Kadam
 
 Week # 9
@@ -17,12 +18,15 @@ Here are the links I used  while writing bash script:
 - `Ask OpenStack <https://ask.openstack.org/>`_
 - `CURL <https://curl.haxx.se/docs/httpscripting.html>`_
 - `Bash <http://www.tldp.org/LDP/abs/html/>`_
-                                                                                              
+
 We were given an opportunity to volunteer the Python Pune meetup. It was a nice experience in February devsprint2016 #1, and a great Learning.
 
 I also volunteered for the gnuNIFY 2016 last month. Attended few workshops as well. @ramky took an awsome Python workshop, he started
-with absolute basics, and at the end, he also discussed on Big Data, Machine Learning and few advanced topics.  
+with absolute basics, and at the end, he also discussed on Big Data, Machine Learning and few advanced topics.
 
 We have started to prepare for the Red Hat certifications as well.Initially, we  have started with RHCSA, then we will focus on RHCE and then on Red Hat OpenStack Certification track.
+
+Week # 10
+=========
 
 
