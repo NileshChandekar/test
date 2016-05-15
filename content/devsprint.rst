@@ -4,7 +4,7 @@ pythondevsprint 2016
 :date: 2016-02-24
 :time: 07:41:41 
 :category: MeetUps and Events
-
+:tags: Python
 
 *Knowledge is Power.*
 
