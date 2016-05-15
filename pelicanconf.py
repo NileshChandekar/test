@@ -29,9 +29,9 @@ AUTHOR_FEED_RSS = None
 
 # Social widget
 SOCIAL = (('facebook', 'https://facebook.com/meganeshkadam'),
-          ('twitter', 'https://twitter.com/meganeshkadam'),
-	      ('linkedin', 'https://in.linkedin.com/pub/ganesh-kadam/b0/746/192'),
-          ('github', 'https://github.com/meganeshkadam'),)
+         ('twitter', 'https://twitter.com/meganeshkadam'),
+         ('linkedin', 'https://in.linkedin.com/pub/ganesh-kadam/b0/746/192'),
+         ('github', 'https://github.com/meganeshkadam'),)
 
 DEFAULT_PAGINATION = 5
 
